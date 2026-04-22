@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import {POManager} from '../../pageObjects/POManager.js';
-import { expect, chromium } from '@playwright/test';
+import { expect } from '@playwright/test';
 
 Given('a login to Ecommerce application with {string} and {string}',{timeout: 100*1000}, async function (userName, password) {
     const products = this.page.locator(".card-body");
