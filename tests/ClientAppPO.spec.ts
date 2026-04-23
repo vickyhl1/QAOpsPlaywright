@@ -19,7 +19,6 @@ test(`@Web Client App login for - ${data.productName}`, async({page}: {page: Pag
     // await page.getByRole('button', { name: 'Register' }).click();
     // await page.getByRole('button', { name: 'Login' }).click();
     
-    const products = page.locator(".card-body");
     const loginPage = poManager.getLoginPage();
     await loginPage.goTo();
     await loginPage.validLogin(userName, password);
